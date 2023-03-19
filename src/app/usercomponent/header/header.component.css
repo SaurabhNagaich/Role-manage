@@ -1,0 +1,12 @@
+.my-secondheader{
+    font-size: 25px;
+    color: white;
+    background-color: #00425A;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.my-header{
+    background-color:  #1b837e;
+}

@@ -1,0 +1,388 @@
+<app-sidenav></app-sidenav>
+<div class="my-cont">
+  <div class="my-url">
+    <div class="navbar row my-secondheader ">
+      <div class="col-10">Home / Create Role</div>
+      <div class="col-2">Logout</div>
+    </div>
+
+  </div>
+
+  <div class="heading-main">
+
+    <mat-stepper [linear]="isLinear" #stepper>
+      <form [formGroup]="Roleregister">
+        <mat-step>
+          <div formGroupName="basic">
+            <ng-template matStepLabel>Genral</ng-template>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group row">
+                  <label for="userRole" class="col-sm-3 col-form-label">User Role:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="userRole">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="firstName" class="col-sm-3 col-form-label">Generated Password:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Via Email</option>
+                      <option value="2">Via Panel</option>
+                      <option value="3">Both</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail" class="col-sm-3 col-form-label">Sender Email Address:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mobileCamer" class="col-sm-3 col-form-label">Sequrity template:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Admin</option>
+                      <option value="2">Manager</option>
+                      <option value="3">clerk</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="addressLine1" class="col-sm-3 col-form-label">Theme Name:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Halo Lab</option>
+                      <option value="2">Cuberto</option>
+                      <option value="3">tonik</option>
+                      <option value="4">Ramotion</option>
+                      <option value="5">unfold</option>
+                      <option value="6">emote-agency</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="city" class="col-sm-3 col-form-label">Email template:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">saurabh Email template for Core Credit</option>
+                      <option value="2">roshan Email template For Core App</option>
+                      <option value="3">sanjay Email template For Core Money</option>
+                      <option value="4">Bhaskar Email template for Core Credit</option>
+                      <option value="5">roshan Email template For Core App</option>
+                      <option value="6">roshan Email template For Core Money</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="state" class="col-sm-3 col-form-label">Allow Approval(Alerts)</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="usercategory" class="col-sm-3 col-form-label">User Category:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="usercategory">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Bypass Store/Velocity Check:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Transactions Log:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Only Credit</option>
+                      <option value="2">Only Deposit</option>
+                      <option value="3">All Transactions</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Override Shippment Hold:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Override Shadow Limit:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail" class="col-sm-3 col-form-label">External SSO Group:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Role Status:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Active</option>
+                      <option value="2">Inactive</option>
+                      <option value="3">Panding</option>
+                    </select>
+                  </div>
+                  <label for="bypassip" class="col-sm-3 col-form-label">Note:If Role Status is made Inactive then
+                    associated Users will not be able to login</label>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Allow Force Post Transaction:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group row">
+                  <label for="userid" class="col-sm-3 col-form-label">Application Access:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Core App</option>
+                      <option value="2">Core Credit</option>
+                      <option value="3">Core Money</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="lastname" class="col-sm-3 col-form-label">User Credential Validation:</label>
+                  <div class="col-sm-9">
+
+                    <mat-select class="form-select form-control" id="userid" aria-label="Default select example"
+                      placeholder="select" [formControl]="toppings" multiple>
+                      <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                    </mat-select>
+
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="userid" class="col-sm-3 col-form-label">Maker-Checker Permission level:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">level 1</option>
+                      <option value="2">level 2</option>
+                      <option value="3">level 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="dob" class="col-sm-3 col-form-label">Lock After Inactivity(Days)</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="dob">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Inactivity Notification Template:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Display Terms & Condditions:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Unknown IP Login Validation:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="firstName" class="col-sm-3 col-form-label">OTP Communication Mode:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Via Email</option>
+                      <option value="2">Via Panel</option>
+                      <option value="3">Both</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mobilenumber" class="col-sm-3 col-form-label">OTP Active Duration(Minutes):</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mobilenumber" class="col-sm-3 col-form-label">Invalid OTP Attempts:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mobilenumber" class="col-sm-3 col-form-label">Invalid Password Attempts:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mobilenumber" class="col-sm-3 col-form-label">Update Profile Validation:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Login Password</option>
+                      <option value="2">UserEmail</option>
+                      <option value="3">Both</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Promo Transaction Window Extension:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Full Rate Balance Transfer Update:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="bypassip" class="col-sm-3 col-form-label">Password Genration Method:</label>
+                  <div class="col-sm-9">
+                    <select class="form-select form-control" id="userid" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="1">Automatic</option>
+                      <option value="2">Email</option>
+                      <option value="3">Pannel</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- <div>
+                  <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </div>
+        </mat-step>
+        <mat-step label="Fill out your address">
+          <div formGroupName="contact">
+            <mat-form-field appearance="fill">
+              <mat-label>Address</mat-label>
+              <input matInput formControlName="email" placeholder="Email" required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </div>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          <p>You are now done.</p>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+      </form>
+    </mat-stepper>
+
+  </div>
+
+
+
+</div>

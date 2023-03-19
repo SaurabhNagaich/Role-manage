@@ -1,0 +1,26 @@
+.my-cont{
+    padding-left: 200px;
+    
+}
+.heading-main{
+    padding-top: 30px;
+}
+.my-url{
+    color: white;
+}
+.my-secondheader{
+    background-color:#00425A;
+    position: fixed;
+    width: 100%;
+}
+.mat-form-multi-select{
+    block-size: 80px;
+}
+/* no delete */
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
